@@ -1,4 +1,4 @@
-import React from "react";
+import Navbar from "@/components/Navbar";
 import "@/assets/styles/globals.css";
 
 // Adding this here affects ALL pages in application. Or can add on each page
@@ -12,7 +12,8 @@ const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>{children}</div>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
